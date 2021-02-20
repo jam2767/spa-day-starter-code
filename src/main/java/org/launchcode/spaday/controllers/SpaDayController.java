@@ -18,7 +18,7 @@ public class SpaDayController {
 
     @PostMapping
     public String spaMenu(@RequestParam String skintype, @RequestParam String manipedi, Model model) {
-        //test
+
         Client newClient = new Client(skintype, manipedi);
         newClient.setAppropriateFacials(skintype);
         model.addAttribute("client" , newClient);
